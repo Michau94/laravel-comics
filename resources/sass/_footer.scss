@@ -4,40 +4,83 @@ footer {
         justify-content: space-between;
         width: 100%;
     }
-    background-image: url("../images/footer-bg.jpg");
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-    color: white;
-    display: flex;
-    overflow: hidden;
-    .logo {
-        align-self: center;
-    }
-
-    .links {
-        width: 50%;
-        padding: 10px;
-        height: 100%;
+    .footer-top {
+        background-image: url("../images/footer-bg.jpg");
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        color: white;
+        overflow: hidden;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 40%;
-        .menu h3 {
-            margin: 10px 0;
-            text-transform: uppercase;
-            font-weight: bold;
+        .logo {
+            align-self: center;
         }
-        ul {
-            list-style-type: none;
-            li {
-                margin: 5px 0;
+        .links {
+            width: 50%;
+            padding: 10px;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+            .menu h3 {
+                margin: 10px 0;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            ul {
+                list-style-type: none;
+                li {
+                    margin: 5px 0;
 
-                a {
-                    text-decoration: none;
-                    color: lightgrey;
+                    a {
+                        text-decoration: none;
+                        color: lightgrey;
+                    }
                 }
             }
+        }
+    }
+
+    .footer-bottom {
+        .media {
+            background-color: $secondary-bg;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 30%;
+            h3 {
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $base-color;
+            }
+        }
+
+        .social a,
+        a {
+            display: block;
+            text-decoration: none;
+            color: $text-main;
+        }
+
+        .button {
+            padding: 10px 15px;
+            border: 1px solid $base-color;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            color: $text-main;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .wrapper {
+            align-items: center;
         }
     }
 }
