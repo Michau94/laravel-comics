@@ -18,6 +18,32 @@ a {
   text-decoration: none;
 }
 
+#single {
+  height: 100%;
+}
+#single .photo-strip {
+  height: 70px;
+  background-color: dodgerblue;
+  margin-bottom: 2rem;
+}
+#single .photo-strip img {
+  position: relative;
+  top: -250px;
+}
+#single .comics-info {
+  display: flex;
+  justify-content: space-between;
+}
+#single .comics-info .price {
+  background-color: green;
+  display: flex;
+  height: 50px;
+  padding: 10px;
+}
+#single .comics-info .infos {
+  flex-basis: 80%;
+}
+
 header {
   height: 150px;
 }

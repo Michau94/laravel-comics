@@ -1,0 +1,29 @@
+#single {
+    height: 100%;
+
+    .photo-strip {
+        height: 70px;
+        background-color: dodgerblue;
+        margin-bottom: 2rem;
+
+        img {
+            position: relative;
+            top: -250px;
+        }
+    }
+
+    .comics-info {
+        display: flex;
+        justify-content: space-between;
+        .price {
+            background-color: green;
+            display: flex;
+            height: 50px;
+            padding: 10px;
+        }
+
+        .infos {
+            flex-basis: 80%;
+        }
+    }
+}

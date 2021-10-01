@@ -3,7 +3,6 @@
 @section('title', 'Homepage')
 
 @section('content')
-<section id="hero"></section>
 
 <section class="cards">
 
