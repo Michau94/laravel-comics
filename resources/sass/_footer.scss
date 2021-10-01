@@ -1,0 +1,43 @@
+footer {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    background-image: url("../images/footer-bg.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    .logo {
+        align-self: center;
+    }
+
+    .links {
+        width: 50%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 40%;
+        .menu h3 {
+            margin: 10px 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+            li {
+                margin: 5px 0;
+
+                a {
+                    text-decoration: none;
+                    color: lightgrey;
+                }
+            }
+        }
+    }
+}
