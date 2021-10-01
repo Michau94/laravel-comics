@@ -1,4 +1,9 @@
-section {
+#hero {
+    background-image: url("../images/jumbotron.jpg");
+    height: 350px;
+}
+
+.cards {
     height: 100%;
     background-color: $secondary-bg;
     padding: 2rem;

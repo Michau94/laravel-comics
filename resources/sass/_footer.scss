@@ -22,10 +22,13 @@ footer {
             display: flex;
             flex-wrap: wrap;
             width: 40%;
-            .menu h3 {
-                margin: 10px 0;
-                text-transform: uppercase;
-                font-weight: bold;
+            .menu {
+                padding: 0.5rem;
+                h3 {
+                    margin: 10px 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
             }
             ul {
                 list-style-type: none;

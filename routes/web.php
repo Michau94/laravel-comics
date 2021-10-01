@@ -18,3 +18,9 @@ Route::get('/', function () {
     $comics = config('comics');
     return view('home', ['comics' => $comics]);
 });
+
+Route::get('/comics', function () {
+
+    $comics = config('comics');
+    return view('comics', ['comics' => $comics]);
+})->name('comics');
