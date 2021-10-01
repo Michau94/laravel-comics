@@ -1,0 +1,35 @@
+header {
+    height: 150px;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    figure {
+        margin: 0;
+        img {
+            width: 100%;
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        height: 150px;
+
+        li {
+            margin: 10px;
+            list-style-type: none;
+            height: 100%;
+            line-height: 150px;
+            text-decoration: none;
+
+            a {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 0.8rem;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
