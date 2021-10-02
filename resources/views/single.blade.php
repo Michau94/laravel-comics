@@ -18,7 +18,7 @@
                             availability">
                             <div class="stock ">Available
                             </div>
-                            <div class="btn-check"> Check Availability</div>
+                            <div class="btn-check"> Check Availability <i class="fas fa-caret-down"></i></div>
                         </div>
 
                     </div>

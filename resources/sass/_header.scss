@@ -32,7 +32,6 @@ header {
         ul {
             display: flex;
             align-items: center;
-            height: 150px;
 
             li {
                 padding: 0 15px;
@@ -73,7 +72,6 @@ header {
             border: none;
             border-bottom: 3px solid $base-color;
             background-repeat: no-repeat;
-
             color: black;
         }
     }

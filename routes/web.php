@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $comics = config('comics');
-    return view('home', ['comics' => $comics]);
+    $cards = config('bonus_Card');
+    return view('home', ['comics' => $comics, 'cards' => $cards]);
 });
 
 Route::get('/comics', function () {
@@ -29,3 +30,8 @@ Route::get('/single', function () {
     $comics = config('comics');
     return view('single', ['comics' => $comics]);
 })->name('single');
+
+Route::get('/characters', function () {
+
+    return view('characters');
+})->name('characters');
