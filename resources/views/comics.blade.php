@@ -1,8 +1,8 @@
-@extends ('layouts/main_layout'); 
-
+@extends ('layouts/main_layout')
+@section('title', 'Comics')
 @section('content')
 
 
-<p>comics section</p>
+    <h1>Comics section</h1>
 
 @endsection

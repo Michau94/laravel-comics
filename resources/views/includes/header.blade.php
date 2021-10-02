@@ -3,7 +3,7 @@
 
 
         <figure>
-            <img src={{ asset('images/dc-logo.png') }} alt="Logo" />
+            <a href="{{ url('/') }}"><img src={{ asset('images/dc-logo.png') }} alt="Logo" /></a>
         </figure>
 
         <nav>

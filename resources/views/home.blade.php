@@ -4,27 +4,21 @@
 
 @section('content')
 
-<section class="cards">
+    <section class="cards">
 
-    <div class="container">
-        
-        <div class="button">
-            Current Series
+        <div class="container flex-center-both">
+
+            <div class="button">
+                Current Series
+            </div>
+            @foreach ($comics as $comic)
+                <div class="card">
+                    <figure>
+                        <a href="{{ route('single') }}"><img src="{{ $comic['thumb'] }}" /></a>
+                    </figure>
+                    <figcaption> {{ $comic['title'] }}</figcaption>
+                </div>
+            @endforeach
         </div>
-
-        @foreach ($comics as $comic)
-        <div class="card">
-            <figure>
-                <a href="{{route('single')}}"><img src="{{$comic['thumb']}}" /></a>
-            </figure>
-            <figcaption> {{$comic['title']}}</figcaption>
-        </div>
-        @endforeach
-  </div>
-
-
-
-</section>
-
-
+    </section>
 @endsection

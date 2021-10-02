@@ -1,4 +1,4 @@
-@extends ('./layouts/main_layout');
+@extends ('./layouts/main_layout')
 
 @section('content')
     <div id="single">
@@ -55,7 +55,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="specs col container">
+                    <div class="specs col">
                         <h1>Specs</h1>
                         <hr />
                         <div class="row">
@@ -83,7 +83,4 @@
             </div>
         </section>
     </div>
-
-
-
 @endsection
