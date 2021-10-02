@@ -1,4 +1,5 @@
 @extends ('./layouts/main_layout')
+@section('title', 'Hero')
 
 @section('content')
     <div id="single">
