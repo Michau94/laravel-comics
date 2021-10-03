@@ -14,14 +14,14 @@
 </head>
 
 <body>
-    @include('../includes/header')
+    @include('includes.header')
 
     <main>
         <section id="hero"></section>
         @yield('content')
     </main>
 
-    @include('../includes/footer')
+    @include('includes.footer')
 </body>
 
 </html>
