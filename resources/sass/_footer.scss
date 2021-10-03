@@ -1,7 +1,6 @@
 footer {
     .container {
-        display: flex;
-        justify-content: space-between;
+        @include justify("between");
         width: 100%;
     }
     .footer-top {
@@ -44,14 +43,17 @@ footer {
         .media {
             background-color: $secondary-bg;
             height: 100px;
-            .container {
-                display: flex;
-                align-items: center;
+            @include center("vertical");
+            .container,
+            .button {
+                @include center("vertical");
+                // display: flex;
+                // align-items: center;
             }
         }
 
         .social {
-            justify-content: space-evenly;
+            @include center("evenly");
             width: 30%;
             h3 {
                 text-transform: uppercase;

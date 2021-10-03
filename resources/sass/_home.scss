@@ -7,8 +7,7 @@
     height: 100%;
     background-color: $secondary-bg;
     padding: 2rem;
-    display: flex;
-    justify-content: center;
+    @include center("horizontal");
 
     .container {
         flex-wrap: wrap;
@@ -54,15 +53,15 @@
     height: 200px;
     background-color: $base-color;
     .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @include center("around");
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
     }
 }
 
 .item {
-    display: flex;
-    align-items: center;
+    @include center("vertical");
 
     img {
         width: 100%;
@@ -70,6 +69,7 @@
     }
 
     span {
+        padding-left: 3px;
         color: $text-main;
         font-weight: 500;
     }

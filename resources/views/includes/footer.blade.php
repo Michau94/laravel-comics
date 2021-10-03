@@ -61,13 +61,13 @@
     </div>
 
     <div class="footer-bottom">
-        <div class="media align-items-center">
+        <div class="media ">
             <div class="container">
-                <div class="button align-items-center">
+                <div class="button">
                     <a href="">Sign-Up Now!</a>
                 </div>
 
-                <div class="social align-items-center">
+                <div class="social ">
                     <h3>Follow Us</h3>
 
                     <div>

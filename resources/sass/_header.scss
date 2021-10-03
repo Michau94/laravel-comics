@@ -18,9 +18,7 @@ header {
     }
     .header-bottom {
         .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include center("between");
         }
         figure {
             margin: 0;
@@ -30,13 +28,11 @@ header {
         }
 
         ul {
-            display: flex;
-            align-items: center;
+            @include center("vertical");
 
             li {
                 padding: 0 15px;
                 list-style-type: none;
-                height: 100%;
                 line-height: 150px;
                 text-decoration: none;
                 position: relative;
@@ -66,13 +62,18 @@ header {
             background-color: $text-main;
             background-image: url("../images/search.png");
             background-position: 90%;
+            background-repeat: no-repeat;
             background-size: 25px;
             padding: 10px 0;
-            text-align: 100px;
+            padding-right: 35px;
+            text-align: right;
             border: none;
             border-bottom: 3px solid $base-color;
-            background-repeat: no-repeat;
-            color: black;
+            color: $text-black;
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 }

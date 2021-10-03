@@ -156,7 +156,6 @@ header .header-bottom ul {
 header .header-bottom ul li {
   padding: 0 15px;
   list-style-type: none;
-  height: 100%;
   line-height: 150px;
   text-decoration: none;
   position: relative;
@@ -183,13 +182,17 @@ header .header-bottom input {
   background-color: #fff;
   background-image: url("../images/search.png");
   background-position: 90%;
+  background-repeat: no-repeat;
   background-size: 25px;
   padding: 10px 0;
-  text-align: 100px;
+  padding-right: 35px;
+  text-align: right;
   border: none;
   border-bottom: 3px solid #0c7cec;
-  background-repeat: no-repeat;
-  color: black;
+  color: #242424;
+}
+header .header-bottom input:focus {
+  outline: none;
 }
 
 #hero {
@@ -259,6 +262,7 @@ header .header-bottom input {
   height: 100px;
 }
 .item span {
+  padding-left: 3px;
   color: #fff;
   font-weight: 500;
 }
@@ -306,12 +310,17 @@ footer .footer-top .links ul li a {
 footer .footer-bottom .media {
   background-color: #242424;
   height: 100px;
+  display: flex;
+  align-items: center;
 }
-footer .footer-bottom .media .container {
+footer .footer-bottom .media .container,
+footer .footer-bottom .media .button {
   display: flex;
   align-items: center;
 }
 footer .footer-bottom .social {
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
   width: 30%;
 }
