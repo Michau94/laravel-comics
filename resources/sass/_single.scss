@@ -4,7 +4,8 @@
     }
 
     .info-thumb {
-        height: 400px;
+        height: 100%;
+        padding-bottom: 2rem;
 
         .photo-strip {
             height: 70px;
@@ -20,6 +21,7 @@
         .comics-info {
             display: flex;
             justify-content: space-between;
+            height: 100%;
 
             .price {
                 background-color: rgb(53, 163, 53);
