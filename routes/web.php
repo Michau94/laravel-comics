@@ -25,11 +25,23 @@ Route::get('/comics', function () {
     return view('comics');
 })->name('comics');
 
-Route::get('/single', function () {
+Route::get('/comics', function () {
 
     $comics = config('comics');
     return view('single', ['comics' => $comics]);
-})->name('single');
+})->name('comics');
+
+// ROUTE DINAMICA
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    if ($id >= 0 && $id < count($comics) && is_numeric($id)) {
+
+        $comic = $comics[$id];
+        return view('single', ['comics' => $comic]);
+    } else {
+        abort('404');
+    }
+})->name('comic');
 
 Route::get('/characters', function () {
 

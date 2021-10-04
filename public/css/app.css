@@ -143,30 +143,30 @@ header .header-bottom .container {
   align-items: center;
   justify-content: space-between;
 }
-header .header-bottom figure {
+header .header-bottom .container figure {
   margin: 0;
 }
-header .header-bottom figure img {
+header .header-bottom .container figure img {
   width: 100%;
 }
-header .header-bottom ul {
+header .header-bottom .container ul {
   display: flex;
   align-items: center;
 }
-header .header-bottom ul li {
+header .header-bottom .container ul li {
   padding: 0 15px;
   list-style-type: none;
   line-height: 150px;
   text-decoration: none;
   position: relative;
 }
-header .header-bottom ul li a {
+header .header-bottom .container ul li a {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.8rem;
   padding: 10px;
 }
-header .header-bottom ul li a:hover:after {
+header .header-bottom .container ul li a:hover:after {
   content: "";
   height: 3px;
   width: 100%;
@@ -175,10 +175,10 @@ header .header-bottom ul li a:hover:after {
   bottom: 0;
   left: 0;
 }
-header .header-bottom ul li a:hover {
+header .header-bottom .container ul li a:hover {
   color: #0c7cec;
 }
-header .header-bottom input {
+header .header-bottom .container input {
   background-color: #fff;
   background-image: url("../images/search.png");
   background-position: 90%;
@@ -191,7 +191,7 @@ header .header-bottom input {
   border-bottom: 3px solid #0c7cec;
   color: #242424;
 }
-header .header-bottom input:focus {
+header .header-bottom .container input:focus {
   outline: none;
 }
 

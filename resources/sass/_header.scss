@@ -19,60 +19,60 @@ header {
     .header-bottom {
         .container {
             @include center("between");
-        }
-        figure {
-            margin: 0;
-            img {
-                width: 100%;
+            figure {
+                margin: 0;
+                img {
+                    width: 100%;
+                }
             }
-        }
 
-        ul {
-            @include center("vertical");
+            ul {
+                @include center("vertical");
 
-            li {
-                padding: 0 15px;
-                list-style-type: none;
-                line-height: 150px;
-                text-decoration: none;
-                position: relative;
+                li {
+                    padding: 0 15px;
+                    list-style-type: none;
+                    line-height: 150px;
+                    text-decoration: none;
+                    position: relative;
 
-                a {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 0.8rem;
-                    padding: 10px;
-                    &:hover:after {
-                        content: "";
-                        height: 3px;
-                        width: 100%;
-                        background-color: $base-color;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                    }
+                    a {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 0.8rem;
+                        padding: 10px;
+                        &:hover:after {
+                            content: "";
+                            height: 3px;
+                            width: 100%;
+                            background-color: $base-color;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                        }
 
-                    &:hover {
-                        color: $base-color;
+                        &:hover {
+                            color: $base-color;
+                        }
                     }
                 }
             }
-        }
-        input {
-            background-color: $text-main;
-            background-image: url("../images/search.png");
-            background-position: 90%;
-            background-repeat: no-repeat;
-            background-size: 25px;
-            padding: 10px 0;
-            padding-right: 35px;
-            text-align: right;
-            border: none;
-            border-bottom: 3px solid $base-color;
-            color: $text-black;
+            input {
+                background-color: $text-main;
+                background-image: url("../images/search.png");
+                background-position: 90%;
+                background-repeat: no-repeat;
+                background-size: 25px;
+                padding: 10px 0;
+                padding-right: 35px;
+                text-align: right;
+                border: none;
+                border-bottom: 3px solid $base-color;
+                color: $text-black;
 
-            &:focus {
-                outline: none;
+                &:focus {
+                    outline: none;
+                }
             }
         }
     }
