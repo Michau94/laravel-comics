@@ -28,7 +28,7 @@ Route::get('/comics', function () {
 Route::get('/comics', function () {
 
     $comics = config('comics');
-    return view('single', ['comics' => $comics]);
+    return view('comic', ['comics' => $comics]);
 })->name('comics');
 
 // ROUTE DINAMICA
@@ -36,7 +36,7 @@ Route::get('/comics/{id}', function ($id) {
     $comics = config('comics');
     if ($id >= 0 && $id < count($comics) && is_numeric($id)) {
         $comic = $comics[$id];
-        return view('single', ['comics' => $comic]);
+        return view('comic', ['comics' => $comic]);
     } else {
         abort('404');
     }
