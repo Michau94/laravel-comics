@@ -20,28 +20,29 @@ Route::get('/', function () {
     return view('home', ['comics' => $comics, 'cards' => $cards]);
 });
 
-Route::get('/comics', function () {
+// grouping routes
 
-    return view('comics');
-})->name('comics');
+Route::prefix('comics')->group(function () {
 
-Route::get('/comics', function () {
 
-    $comics = config('comics');
-    return view('comic', ['comics' => $comics]);
-})->name('comics');
+    Route::get('/', function () {
 
-// ROUTE DINAMICA
-Route::get('/comics/{id}', function ($id) {
-    $comics = config('comics');
-    if ($id >= 0 && $id < count($comics) && is_numeric($id)) {
-        $comic = $comics[$id];
-        return view('comic', ['comics' => $comic]);
-    } else {
-        abort('404');
-    }
-})->name('comic');
+        $comics = config('comics');
+        return view('comics', ['comics' => $comics]);
+    })->name('comics');
 
+
+    // ROUTE DINAMICA
+    Route::get('/{id}', function ($id) {
+        $comics = config('comics');
+        if ($id >= 0 && $id < count($comics) && is_numeric($id)) {
+            $comic = $comics[$id];
+            return view('comic', ['comics' => $comic]);
+        } else {
+            abort('404');
+        }
+    })->name('comic');
+});
 Route::get('/characters', function () {
 
     return view('characters');

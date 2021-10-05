@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    @include('includes.header')
+    @include('includes.header', ['links' => config('main_menu')])
 
     <main>
         <section id="hero"></section>

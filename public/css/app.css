@@ -168,8 +168,7 @@ header .header-bottom .container ul li a {
   font-size: 0.8rem;
   padding: 10px;
 }
-header .header-bottom .container ul li a:hover:after,
-header .header-bottom .container ul li a .active {
+header .header-bottom .container ul li a:hover:after, header .header-bottom .container ul li a.active:after {
   content: "";
   height: 3px;
   width: 100%;
@@ -178,8 +177,7 @@ header .header-bottom .container ul li a .active {
   bottom: 0;
   left: 0;
 }
-header .header-bottom .container ul li a:hover,
-header .header-bottom .container ul li a .active {
+header .header-bottom .container ul li a:hover {
   color: #0c7cec;
 }
 header .header-bottom .container input {
@@ -189,7 +187,7 @@ header .header-bottom .container input {
   background-repeat: no-repeat;
   background-size: 25px;
   padding: 10px 0;
-  padding-right: 35px;
+  padding-right: 50px;
   text-align: right;
   border: none;
   border-bottom: 3px solid #0c7cec;

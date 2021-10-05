@@ -17,16 +17,12 @@
             </figure>
             <nav>
                 <ul>
-                    <li><a href="{{ url('characters') }}">Characters</a></li>
-                    <li><a href="{{ route('comics') }}">Comics</a></li>
-                    <li><a :href="">Movies</a></li>
-                    <li><a :href="">Tv</a></li>
-                    <li><a :href="">Games</a></li>
-                    <li><a :href="">Collectibles</a></li>
-                    <li><a :href="">Videos</a></li>
-                    <li><a :href="">Fans</a></li>
-                    <li><a :href="">News</a></li>
-                    <li><a :href="">Shop</a></li>
+                    @foreach ($links as $link)
+                        <li><a href="{{ route($link['route']) }}"
+                                class="{{ Request::route()->getName() == $link['route'] ? 'active' : ' ' }}">{{ $link['text'] }}</a>
+                        </li>
+                    @endforeach
+
                 </ul>
             </nav>
             <input type="search" placeholder="Search">
