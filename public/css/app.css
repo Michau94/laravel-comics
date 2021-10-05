@@ -168,7 +168,8 @@ header .header-bottom .container ul li a {
   font-size: 0.8rem;
   padding: 10px;
 }
-header .header-bottom .container ul li a:hover:after {
+header .header-bottom .container ul li a:hover:after,
+header .header-bottom .container ul li a .active {
   content: "";
   height: 3px;
   width: 100%;
@@ -177,7 +178,8 @@ header .header-bottom .container ul li a:hover:after {
   bottom: 0;
   left: 0;
 }
-header .header-bottom .container ul li a:hover {
+header .header-bottom .container ul li a:hover,
+header .header-bottom .container ul li a .active {
   color: #0c7cec;
 }
 header .header-bottom .container input {

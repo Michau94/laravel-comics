@@ -16,7 +16,9 @@
             @foreach ($comics as $comic)
                 <div class="card">
                     <figure>
-                        <a href="{{ url('comics/' . $loop->index) }}"><img src="{{ $comic['thumb'] }}" /></a>
+                        {{-- MODO CON URL --}}
+                        {{-- <a href="{{ url('comics/' . $loop->index) }}"><img src="{{ $comic['thumb'] }}" /></a> --}}
+                        <a href="{{ route('comic', ['id' => $loop->index]) }}"><img src="{{ $comic['thumb'] }}" /></a>
                     </figure>
                     <figcaption> {{ $comic['title'] }}</figcaption>
                 </div>

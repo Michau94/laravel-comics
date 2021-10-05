@@ -35,7 +35,6 @@ Route::get('/comics', function () {
 Route::get('/comics/{id}', function ($id) {
     $comics = config('comics');
     if ($id >= 0 && $id < count($comics) && is_numeric($id)) {
-
         $comic = $comics[$id];
         return view('single', ['comics' => $comic]);
     } else {
